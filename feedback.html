@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ตัวอย่างระบบบริการการศึกษาสำหรับนักศึกษา">
+  <title>เสนอความคิดเห็น | ระบบบริการการศึกษา</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="LogoMaejo.png" class="logo"></img>
+      <div class="logo-placeholder-subtitle">MAEJO UNIVERSITY · STUDENT SERVICE</div>
+    </div>
+  </div>
+</header>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <strong class="text-sm sm:text-base">ระบบบริการการศึกษา</strong>
+    <div class="language">TH ภาษาไทย ▾</div>
+  </div>
+</div>
+
+<div class="portal-layout">
+  
+<aside class="sidebar" aria-label="เมนูหลัก">
+  <div class="sidebar-title">เมนูหลัก</div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-link logout-link">ออกจากระบบ</a>
+    <a class="sidebar-link" href="home.html">หน้าหลัก</a>
+    <a class="sidebar-link active" href="feedback.html">เสนอความคิดเห็น</a>
+    <a class="sidebar-link" href="history.html">ประวัติการเข้าใช้ระบบ</a>
+  </nav>
+</aside>
+
+  <main class="main-content">
+    <div class="student-bar">
+      <span class="student-id">รหัสนักศึกษา</span>
+      <span>:</span>
+      <span>ชื่อนักศึกษา</span>
+    </div>
+
+    <section aria-labelledby="feedback-title">
+      <h1 id="feedback-title" class="page-title">เชิญร่วมแสดงความคิดเห็น</h1>
+      <p class="section-lead">วันจันทร์ 10 ธันวาคม 2570</p>
+
+      <div class="form-card mt-4 shadow-sm">
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label class="form-label" for="message">ความคิดเห็น / ข้อเสนอแนะ</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              maxlength="1000"
+              placeholder="พิมพ์ความคิดเห็นของคุณที่นี่..."
+              required
+            ></textarea>
+            <div class="char-row">
+              <span>จำนวนตัวอักษร</span>
+              <span id="charCount" class="char-count">0</span>
+              <span>/ 1,000</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="questionType">ต้องการถาม</label>
+            <select class="form-control" id="questionType" name="questionType">
+              <option value="none">ไม่ระบุ</option>
+              <option value="registration">การลงทะเบียน</option>
+              <option value="payment">การชำระเงิน</option>
+              <option value="system">การใช้งานระบบ</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary" type="submit">ส่งข้อความ</button>
+          <p id="feedbackResult" class="mt-3 font-semibold text-green-700" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>ระบบบริการการศึกษา</span>
+    <span>© 2027 Student Service Portal</span>
+  </div>
+</footer>
+
+<script>
+  const message = document.getElementById("message");
+  const charCount = document.getElementById("charCount");
+  const form = document.getElementById("feedbackForm");
+  const result = document.getElementById("feedbackResult");
+
+  message.addEventListener("input", () => {
+    charCount.textContent = message.value.length;
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    result.textContent = "ส่งความคิดเห็นตัวอย่างเรียบร้อยแล้ว";
+    form.reset();
+    charCount.textContent = "0";
+  });
+</script>
+</body>
+</html>

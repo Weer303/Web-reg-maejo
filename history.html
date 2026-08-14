@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ตัวอย่างระบบบริการการศึกษาสำหรับนักศึกษา">
+  <title>ประวัติการเข้าใช้ระบบ | ระบบบริการการศึกษา</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="LogoMaejo.png" class="logo"></img>
+      <div class="logo-placeholder-subtitle">MAEJO UNIVERSITY · STUDENT SERVICE</div>
+    </div>
+  </div>
+</header>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <strong class="text-sm sm:text-base">ระบบบริการการศึกษา</strong>
+    <div class="language">TH ภาษาไทย ▾</div>
+  </div>
+</div>
+
+<div class="portal-layout">
+  
+<aside class="sidebar" aria-label="เมนูหลัก">
+  <div class="sidebar-title">เมนูหลัก</div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-link logout-link">ออกจากระบบ</a>
+    <a class="sidebar-link" href="home.html">หน้าหลัก</a>
+    <a class="sidebar-link" href="feedback.html">เสนอความคิดเห็น</a>
+    <a class="sidebar-link active" href="history.html">ประวัติการเข้าใช้ระบบ</a>
+  </nav>
+</aside>
+
+  <main class="main-content">
+    <div class="student-bar">
+      <span class="student-id">รหัสนักศึกษา</span>
+      <span>:</span>
+      <span>ชื่อนักศึกษา</span>
+    </div>
+
+    <section aria-labelledby="history-title">
+      <h1 id="history-title" class="page-title">สถิติการเข้าใช้ระบบของท่าน</h1>
+      <p class="section-lead">ประจำเดือน xxx 2570</p>
+
+      <div class="table-wrap mt-4 shadow-sm">
+        <table class="history-table">
+          <caption class="sr-only">ประวัติการเข้าใช้ระบบ</caption>
+          <thead>
+            <tr>
+              <th>ลำดับ</th>
+              <th>วันที่</th>
+              <th>เวลา</th>
+              <th>หมายเหตุ</th>
+              <th>จาก (IP)</th>
+              <th>ตรวจสอบข้อมูลโดย</th>
+              <th>หมายเหตุเพิ่มเติม</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>10</td>
+              <td>00:00</td>
+              <td><span class="status-success">เข้าสู่ระบบสำเร็จ</span></td>
+              <td>192.0.2.45</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>ระบบบริการการศึกษา</span>
+    <span>© 2027 Student Service Portal</span>
+  </div>
+</footer>
+
+</body>
+</html>

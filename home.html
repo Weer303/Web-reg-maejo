@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ตัวอย่างระบบบริการการศึกษาสำหรับนักศึกษา">
+  <title>หน้าหลัก | ระบบบริการการศึกษา</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="LogoMaejo.png" class="logo"></img>
+      <div class="logo-placeholder-subtitle">MAEJO UNIVERSITY · STUDENT SERVICE</div>
+    </div>
+  </div>
+</header>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <strong class="text-sm sm:text-base">ระบบบริการการศึกษา</strong>
+    <div class="language">TH ภาษาไทย ▾</div>
+  </div>
+</div>
+
+<div class="portal-layout">
+  
+<aside class="sidebar" aria-label="เมนูหลัก">
+  <div class="sidebar-title">เมนูหลัก</div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-link logout-link">ออกจากระบบ</a>
+    <a class="sidebar-link active" href="home.html">หน้าหลัก</a>
+    <a class="sidebar-link" href="feedback.html">เสนอความคิดเห็น</a>
+    <a class="sidebar-link" href="history.html">ประวัติการเข้าใช้ระบบ</a>
+  </nav>
+</aside>
+
+  <main class="main-content">
+    <div class="student-bar">
+      <span class="student-id">รหัสนักศึกษา</span>
+      <span>:</span>
+      <span>ชื่อนักศึกษา</span>
+    </div>
+
+    <section aria-labelledby="welcome-title">
+      <h1 id="welcome-title" class="page-title">ยินดีต้อนรับเข้าสู่ระบบบริการการศึกษา</h1>
+      <p class="section-lead">ตรวจสอบข้อมูลบริการการศึกษาของนักศึกษา</p>
+    </section>
+
+    <section class="mt-6" aria-labelledby="service-title">
+      <h2 id="service-title" class="section-title">บริการการศึกษา</h2>
+      <p class="section-lead">เลือกดูข้อมูลที่ต้องการจากรายการด้านล่าง</p>
+
+      <div class="info-grid mt-4">
+        <article class="info-card shadow-sm">
+          <h3>การชำระเงินตามกำหนดปกติ</h3>
+          <ul>
+            <li>ตรวจสอบยอดค่าใช้จ่ายการศึกษา</li>
+            <li>พิมพ์ใบชำระเงิน</li>
+            <li>ชำระเงินตามวันที่มหาวิทยาลัยกำหนด</li>
+          </ul>
+        </article>
+
+        <article class="info-card shadow-sm">
+          <h3>การชำระเงินล่าช้า</h3>
+          <ul>
+            <li>ตรวจสอบรายการค้างชำระ</li>
+            <li>พิมพ์ใบชำระเงินล่าช้า</li>
+            <li>อาจมีค่าธรรมเนียมตามประกาศ</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>ระบบบริการการศึกษา</span>
+    <span>© 2027 Student Service Portal</span>
+  </div>
+</footer>
+
+</body>
+</html>
